@@ -1,0 +1,8 @@
+C:\Users\afedi\Desktop\Lab stuff\BIVT_2024_Lab_8\Lab_8\Lab_8\bin\Debug\Lab_8.exe.config
+C:\Users\afedi\Desktop\Lab stuff\BIVT_2024_Lab_8\Lab_8\Lab_8\bin\Debug\Lab_8.exe
+C:\Users\afedi\Desktop\Lab stuff\BIVT_2024_Lab_8\Lab_8\Lab_8\bin\Debug\Lab_8.pdb
+C:\Users\afedi\Desktop\Lab stuff\BIVT_2024_Lab_8\Lab_8\Lab_8\obj\Debug\Lab_8.csproj.SuggestedBindingRedirects.cache
+C:\Users\afedi\Desktop\Lab stuff\BIVT_2024_Lab_8\Lab_8\Lab_8\obj\Debug\Lab_8.csproj.CoreCompileInputs.cache
+C:\Users\afedi\Desktop\Lab stuff\BIVT_2024_Lab_8\Lab_8\Lab_8\obj\Debug\Lab_8.exe
+C:\Users\afedi\Desktop\Lab stuff\BIVT_2024_Lab_8\Lab_8\Lab_8\obj\Debug\Lab_8.pdb
+C:\Users\afedi\Desktop\Lab stuff\BIVT_2024_Lab_8\Lab_8\Lab_8\obj\Debug\Lab_8.csproj.AssemblyReference.cache

@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Прочие файлы",
+      "ColorIndex": -1
+    },
+    "4f6d62f7-e8f2-44fb-99c9-62b164e7a089": {
+      "ProjectGuid": "4f6d62f7-e8f2-44fb-99c9-62b164e7a089",
+      "DisplayName": "Lab_8",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
