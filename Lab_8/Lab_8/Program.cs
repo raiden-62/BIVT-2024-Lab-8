@@ -233,6 +233,10 @@ namespace Lab_8
                 tester.Review();
                 bool hasPassed = targets[test].Equals(tester.Output);
                 Console.WriteLine($"Test {test + 1}: {hasPassed}");
+                //foreach(var pair in tester.Codes)
+                //{
+                //    Console.WriteLine(pair.Item1 + " " + pair.Item2);
+                //}
                 if (!hasPassed)
                 {
                     Console.WriteLine("Expected:");

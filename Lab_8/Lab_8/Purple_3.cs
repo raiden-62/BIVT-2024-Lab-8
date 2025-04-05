@@ -5,8 +5,12 @@ namespace Lab_8
 {
     public class Purple_3 : Purple
     {
-        public Purple_3(string input) : base(input) { }
+        public Purple_3(string input) : base(input) {
+            _codes = null;
+        }
+        private (string, char)[] _codes;
 
+        public (string, char)[] Codes => ((string, char)[])_codes?.Clone();
         public override void Review()
         {
             if (_input == null) return;
@@ -29,7 +33,12 @@ namespace Lab_8
 
             string[] asciiFive = asciiSymbols.Where(s => !Input.Contains(s)).Take(5).ToArray();
 
-
+            (string, char)[] codes = new (string, char)[5];
+            for (int i = 0; i < codes.Length; i++)
+            {
+                codes[i] = (toReplace[i], asciiFive[i][0]);
+            }
+            _codes = codes;
             _output = _input;
 
             for(int i = 0; i < 5; i++)
