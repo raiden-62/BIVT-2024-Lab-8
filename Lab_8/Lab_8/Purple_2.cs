@@ -18,30 +18,49 @@ namespace Lab_8
             _output = lines;
         }
 
-        public static string[] BreakdownString(string s)
+        private static string[] BreakdownString(string s)
         {
             string[] words = s.Split(' ');
             string[] lines = new string[0];
-            string line = "";
-            for (int i = 0; i < words.Length - 1; i++)
+            string currentLine = "";
+
+            foreach (string word in words)
             {
-                line += words[i] + " ";
-                if (words[i + 1].Length + line.Length > 50)
+                if (string.IsNullOrEmpty(word)) continue;
+
+                int newLength = currentLine.Length;
+                if (newLength > 0) newLength += 1;
+
+                newLength += word.Length;
+
+                if (newLength > 50)
                 {
                     Array.Resize(ref lines, lines.Length + 1);
-                    lines[lines.Length - 1] = line.Trim();
-                    line = "";
+                    lines[lines.Length - 1] = currentLine;
+                    currentLine = word;
                 }
-            };
+                else
+                {
+                    if (currentLine.Length > 0) currentLine += " ";
+                    currentLine += word;
+                }
+            }
+
+            if (!string.IsNullOrEmpty(currentLine))
+            {
+                Array.Resize(ref lines, lines.Length + 1);
+                lines[lines.Length - 1] = currentLine;
+            }
 
             return lines;
         }
 
-        public static void NormalizeToFifty(string[] lines)
+        private static void NormalizeToFifty(string[] lines)
         {
             for (int i = 0; i < lines.Length; i++)
             {
                 string[] words = lines[i].Split(' ');
+                if (words.Length <= 1) continue;
 
                 int spacesToAdd = 50 - lines[i].Trim().Length;
                 while (spacesToAdd > 0)
