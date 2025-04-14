@@ -4,6 +4,7 @@ namespace Lab_8
 {
     public class Purple_4 : Purple
     {
+        public string Output => _output;
 
         private (string, char)[] _codes;
         public Purple_4(string input, (string, char)[] codes) : base(input)

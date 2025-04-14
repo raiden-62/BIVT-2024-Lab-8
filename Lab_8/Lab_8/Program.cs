@@ -8,16 +8,16 @@ namespace Lab_8
         {
             Program program = new Program();
 
-            //program.Test_1();
+            program.Test_1();
             program.Test_2();
-            //program.Test_3();
-            //program.Test_4();
+            program.Test_3();
+            program.Test_4();
 
             (string, char)[] t = new (string, char)[] { ("a", '1') };
             string test = "1 июля 2015 года Греция объявила о дефолте по государственному долгу, став первой развитой страной в истории, которая не смогла выплатить свои долговые обязательства в полном объеме. Сумма дефолта составила порядка 1,6 миллиарда евро. Этому предшествовали долгие переговоры с международными кредиторами, такими как Международный валютный фонд (МВФ), Европейский центральный банк (ЕЦБ) и Европейская комиссия (ЕК), о программах финансовой помощи и реструктуризации долга. Основными причинами дефолта стали недостаточная эффективность реформ, направленных на улучшение финансовой стабильности страны, а также политическая нестабильность, что вызвало потерю доверия со стороны международных инвесторов и кредиторов. Последствия дефолта оказались глубокими и долгосрочными: сокращение кредитного рейтинга страны, увеличение затрат на заемный капитал, рост стоимости заимствований и утрата доверия со стороны международных инвесторов.";
             Purple_2 a = new Purple_2(test);
             a.Review();
-            //Console.WriteLine(a.ToString());
+            //Console.WriteLine(a.ToString()+".");
             
             a.ToString();
         }
@@ -189,7 +189,7 @@ namespace Lab_8
                 tester.Review();
                 bool hasPassed = true;
                 string[] outputLines = tester.Output;
-
+                
 
                 for (int i = 0; i < outputLines.Length; i++)
                 {
@@ -203,6 +203,7 @@ namespace Lab_8
                 }
                 if (!hasPassed) Console.WriteLine(tester.ToString());
                 Console.WriteLine($"Test {test + 1}: {hasPassed}");
+                Console.WriteLine(tester.ToString());
             }
             Console.WriteLine();
         }

@@ -5,6 +5,8 @@ namespace Lab_8
 {
     public class Purple_1 : Purple
     {
+        public string Output => _output;
+
         public Purple_1(string input) : base(input) { }
 
         private string Reverse(string s)

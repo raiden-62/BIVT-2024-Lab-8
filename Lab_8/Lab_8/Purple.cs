@@ -11,7 +11,6 @@ namespace Lab_8
         static protected readonly char[] _punctuationMarks = { '.', '!', '?', ',', ':', '\"', ';', '–', '(', ')', '[', ']', '{', '}', '/' };
         static protected readonly char[] _numbers = { '0', '1', '2', '3', '4', '5', '6', '7', '8', '9' };
         public string Input => _input;
-        public string Output => _output;
 
         public Purple(string input)
         {

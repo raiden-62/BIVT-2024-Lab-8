@@ -5,6 +5,8 @@ namespace Lab_8
 {
     public class Purple_3 : Purple
     {
+        public string Output => _output;
+
         public Purple_3(string input) : base(input) {
             _codes = null;
         }
